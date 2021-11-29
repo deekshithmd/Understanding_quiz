@@ -43,7 +43,7 @@ questionBank=[{
 },{
 
   question:"Which Smartphone do I use?",
-  answer:"Motorola"
+  answer:"Moto"
 
 },{
 

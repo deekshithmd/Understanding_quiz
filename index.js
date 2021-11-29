@@ -29,13 +29,13 @@ questionBank=[{
   question:"Where do I work?",
   answer:"Wipro"
 },{
-  question:"Which smartphone do I use?",
+  question:"Which Smartphone do I use?",
   answer:"Motorola"
 },{
-  question:"Which laptop do I have?",
+  question:"Which Laptop do I have?",
   answer:"Lenovo"
 },{
-  question:"Am I interested in politics?",
+  question:"Am I interested in Politics?",
   answer:"No"
 }]
 
@@ -46,7 +46,12 @@ highScore=[{
 for(var i=0;i<questionBank.length;i++){
   play(questionBank[i].question,questionBank[i].answer)
 }
-console.log("Yess...Done, Your Final score is ",score)
+if(score<3){
+  console.log(chalk.red("You don't know much about Deekshith...you scored ",score))
+}
+else{
+  console.log("Yess...Done, You know me better your score is ",score)
+}
 for(var i=0;i<highScore.length;i++){
   if(score>highScore[i].score){
     console.log(chalk.green("Congratulations!!!....you know me very well than "+highScore[i].name+"...send me screenshot of score to update your score"))
